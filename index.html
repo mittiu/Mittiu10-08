@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️By:Lucas❤️</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo11.jpeg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bem-vinda</h1>
+            <p>Você está pronta?</p>
+            <button id="btnSim" class="btn-azul">SIM</button>
+            <button id="btnNao" class="btn-vermelho">NÃO</button>
+        </div>
+
+        <div id="tela2" class="tela tela-centro">
+            <div class="page-number">1/71</div>
+            <h1 class="text-muted">Para confirmar que é vc vamos ao PEQUENO questionario:</h1>
+            <form id="formPerguntas">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="form-control">
+                    <small id="nomeErro" class="text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" class="form-control">
+                    <small id="idadeErro" class="text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label for="nivelBeleza">Nível de beleza: 0 a 10</label>
+                    <input type="number" id="nivelBeleza" class="form-control">
+                    <small id="nivelBelezaErro" class="text-danger"></small>
+                </div>
+                <button type="button" id="btnValidar" class="btn-azul">Validar</button>
+            </form>
+        </div>
+        
+
+        <div id="tela8" class="tela tela-centro">
+            <div class="page-number">2/71</div>
+            <h1 class="letra-vermelha">Agora sobre seu namorado:</h1>
+            <form id="formPerguntas">
+            <div class="form-group">
+                <label for="nomeNamorado">Nome do namorado:</label>
+                <input type="text" id="nomeNamorado" name="nomeNamorado" class="form-control">
+                <span id="nomeNamoradoErro" class="erro"></span>
+            </div>
+            <div class="form-group">
+                <label for="idadeNamorado">Idade:</label>
+                <input type="number" id="idadeNamorado" name="idadeNamorado" class="form-control">
+                <span id="idadeNamoradoErro" class="erro"></span>
+            </div>
+
+                <label for="nivelNamorado">Dia do aniversario:</label>
+                <input type="number" id="nivelNamorado" name="nivelNamorado" class="form-control">
+                <span id="nivelNamoradoErro" class="erro"></span>
+        
+                <label for="nivelBelezaNamorado">O quanto q ele ti ama: 0 a 10</label>
+                <input type="number" id="nivelBelezaNamorado" name="nivelBelezaNamorado" class="form-control">
+                <span id="nivelBelezaNamoradoErro" class="erro"></span>
+        
+                <button type="button" id="btnValidarTela3" class="btn-verde btn-block">Validar</button>
+            </form>
+        </div>
+        
+        
+
+        <div id="tela9" class="tela">
+            <p>Não sei pq sempre achei q essa musica era nossa ...</p>
+            <hr>
+            <p><small>Sempre penso em vc quando escuto ela</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+        <div id="tela10" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="2500">
+                <p>Feliz aniversario amor...</p>
+               
+
+            </div>
+            <div tempo="3000" final="true">
+                <p>Hoje é seu dia amor, o seu momento...</p>
+            </div>
+        </div>
+
+        <div id="tela11" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="4000">
+                <p>Desde que começamos a namorar vc me proporcionou diversos momentos</p>
+                <p> </p>
+                <p>incriveis </p> 
+            </div>
+            <div tempo="3000">
+                <p>Começou com algo tão...</p>
+                <p>Bobinho...</p>
+            </div>
+            <div tempo="3000">
+                <img src="img2/ss.png" class="custom mb-4" width="600" alt="300">
+                <p>Encima daquele predio...</p>
+            </div>
+            <div tempo="3000">
+                <img src="img2/historia1.png" class="custom mb-4" width="600" alt="300">
+                <p>Aonde começamos a nossa propria historia</p>
+            </div>
+            <div tempo="3000">
+                <p>E apartir disso...</p>
+            </div>
+            <div tempo="3000">
+                <img src="img2/mine1.png" class="custom mb-4" width="600" alt="300">
+                <p>Vivemos diversos momentos juntos</p>
+            </div>
+            <div tempo="3000">
+                <img src="img2/ytak.png" class="custom mb-4" width="600" alt="300">
+                <p>Momentos bobos</p>
+            </div>
+            <div tempo="2500">
+                <img src="img2/hype1.png" class="custom mb-4" width="600" alt="300">
+                <p>Fofos...</p>
+            </div>
+            <div tempo="2500">
+                <img src="img2/hypeamigos.png" class="custom mb-4" width="600" alt="300">
+                <p>Aonde fizemos amigos...</p>
+            </div>
+            <div tempo="2500">
+                <img src="img2/xx.png" class="custom mb-4" width="600" alt="300">
+                <p>E familia</p>
+            </div>
+            <div tempo="3000">
+                <img src="img2/2meses.png" class="custom mb-4" width="600" alt="300">
+                <p>Eo mais importante.</p>
+            </div>
+            <div tempo="4000">
+                <img src="img2/7meses.png" class="custom mb-4" width="600" alt="300">
+                <p>Vivemos esses momentos Juntos💗</p>
+            </div>
+            <div tempo="2000">
+
+            </div>
+            <div tempo="2000" final="true" fundo="fundo11">
+                <p>Feliz aniversaio boboca...</p>
+            </div>
+        </div>
+
+        <div id="tela12" class="tela-centro tela" fundo="fundo11" tempo="6000">
+         
+            <p>Queria ti falar uma ultima coisinha...</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela13" class="tela" >
+         
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Vc é o amor da minha vida, E sou muito feliz de poder compartilhar esses momentos com vc, Ti amo vida... Feliz aniversario</h2>
+                    <p class="letra2" style="font-size: 1.0em;">...<strong></strong></p>
+                    <p> </p>
+            </div>
+
+            <button class="btn-block btn-vermelho" onclick="alert('Feliz aniversario mozão <3, Agr Pedi pro seu momolado o restante do presente');window.location.href='https://www.youtube.com/watch?v=FeDakbkxkcc&ab_channel=SadSongsLetras'; " >Continuar</button>
+
+
+        </div>
+
+    </div>
+
+
+    
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
