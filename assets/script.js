@@ -117,7 +117,7 @@ $(document).ready(function(){
     let movimentoContador = 0;
 
     $("#btnSim").click(function() {
-        if (movimentoContador < 1) {
+        if (movimentoContador < 11) {
             moverBotaoAleatoriamente($(this));
             movimentoContador++;
         } else {
